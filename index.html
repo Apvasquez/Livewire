@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo de Tailwind</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    @font-face {
+      font-family: alarm;
+      src: url(alarm.ttf);
+    }
+    .cronometro {
+      text-align: center;
+      width: 200px;
+      height: 100px;
+    }
+    .cu{
+      background-color: aqua;
+    }
+
+    .boton {
+      display: inline-block;
+      position: relative;
+      background-color: aquamarine;
+    }
+
+    #hms,
+    #hms2,#ces {
+      height: 68px;
+      padding: 5px 0;
+      font-size: 50px;
+      color: green;
+      background-color: chartreuse;
+      font-family: alarm;
+    }
+    .start {}
+    .reiniciar {}
+    .rey{}
+  </style>
+</head>
+
+<body class="">
+  <div class="container-fluid bg-red-200 bg-cover h-screen w-full " style="background-image: url(image/car.jpg);">
+    <div class="grid grid-cols-3 grid-rows-5">
+      <div class="mt-10 col-start-2  text-white text-4xl tracking-wider font-normal sm:text-4xl font-mono text-center">
+        CRONÓMETRO</div>
+      <div class="col-start-3 row-start-2 col-span-2" id="vuelta">
+
+        <div class="cronometro  mx-auto">
+          <div id="hms2"></div>
+        </div>
+      </div>
+      <div class="col-start-2 row-start-3 text-center" id="cronometro">
+        <div class="cronometro mt-5 mx-auto">
+          <div id="hms"></div>
+          <div class="-ml-4 boton start mt-12 border-blue-500 rounded-full font-bold text-blue-500 px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-2"id="Ini">
+            INICIAR</div>
+          <div
+            class="boton reiniciar border-blue-500 rounded-full font-bold text-blue-500 px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-2"id="Vuel" onclick="agregarFila()">
+            VUELTA</div>
+        </div>   
+         
+
+    </div>
+  </div>
+  
+  <div class="float-left cu" id="ces">
+   
+  </div>
+  
+</div>
+  <script src="javascrip.js"></script>
+</body>
+
+</html>
